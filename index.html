@@ -3,18 +3,20 @@
     <head>
         <meta charset="utf-8"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>        
+        <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>           
         <script type="text/javascript">
            function confirmar() {
               var scope = $('#entityScope').scope();
               alert(scope.firstName + " " + scope.lastName);
            }
         </script>
+        
+        <title>Formulário</title>
     
     </head>
     <body>
 
-        <h1>Formulário.</h1>
+        <h3>Formulário</h3>
 
         <div id="entityScope" ng-app="myApp" ng-controller="myCtrl">
 
@@ -24,7 +26,7 @@
             Nome completo: {{firstName + " " + lastName}}
             <br>
             <br>
-            <input type="button" value="Confirmar" onclick="confirmar()">
+            <input type="button" value="Confirmar" onclick="confirmar()" ng-model="button">
         </div>
 
         <script>

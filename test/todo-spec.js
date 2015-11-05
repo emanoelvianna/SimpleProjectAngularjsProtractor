@@ -1,8 +1,7 @@
 describe('Protractor Demo App', function() {
-    var firstNumber = element(by.model('first'));
-    var secondNumber = element(by.model('second'));
-    var goButton = element(by.id('gobutton'));
-    var latestResult = element(by.binding('latest'));
+    var firstName = element(by.model('firstName'));
+    var lastName = element(by.model('lastName'));
+    var goButton = element(by.id('button'));
 
     beforeEach(function() {
         browser.get('http://localhost/SimpleProjectAngularjsProtractor/');

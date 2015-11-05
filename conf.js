@@ -6,13 +6,13 @@ exports.config = {
     specs: ['test/*.js'],
 
     jasmineNodeOpts: {
-        // Se verdad então exibir.
+        // If true, display spec names.
         isVerbose: true,
-        // Sem verdade, printa no terminal.
+        // If true, print colors to the terminal.
         showColors: true,
-        // Se verdade então incluir.
+        // If true, include stack traces in failures.
         includeStackTrace: true,
-        // Tempo de espera antes do teste falhar.
+        // Default time to wait in ms before a test fails.
         defaultTimeoutInterval: 30000
     },
 };
